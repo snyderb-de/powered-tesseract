@@ -4,6 +4,6 @@ Get-ChildItem -Filter '*.tif'| ForEach-Object {
 }
 Set-Location '~\'
 
-$wshell = New-Object -ComObject Wscript.Shell 
+$wshell = New-Object -ComObject Wscript.Shell
 
-$Output = $wshell.Popup("Your files have been converted and OCR'd!")
+$wshell.Popup("Your files have been converted and OCR'd!")
