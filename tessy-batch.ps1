@@ -1,5 +1,5 @@
 ﻿Set-Location '~\Scan'
-Get-ChildItem -Recurse -include *.jpg,*.tif,*.png,*.jpeg,*.tiff | ForEach-Object {
+Get-ChildItem -Recurse -include *.jpg,*.jpeg,*.tif,*.tiff,*.png | ForEach-Object {
     & '~\AppData\Local\Programs\Tesseract-OCR\tesseract.exe' -l eng $_.Name ($_.BaseName) pdf
 }
 Set-Location '~\'
